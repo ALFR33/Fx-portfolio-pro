@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>FX Portfolio Demo</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial; }
+body { background: #0B1120; color: #E5E7EB; padding: 20px; }
+.container { max-width: 900px; margin: auto; }
+.total-box { background: linear-gradient(135deg, #38BDF8, #0EA5E9); padding: 25px; border-radius: 15px; text-align: center; }
+.total-box h1 { font-size: 40px; margin: 10px 0; color: white; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; margin: 20px 0; }
+.card { background: #1E293B; padding: 18px; border-radius: 15px; }
+button { padding: 12px 20px; background: #38BDF8; color: #0B1120; border: none; border-radius: 10px; font-weight: bold; cursor: pointer; }
+</style>
+</head>
+<body>
+<div class="container">
+<h1 style="text-align:center; color:#38BDF8; margin-bottom:20px;">FX Portfolio Pro - DEMO</h1>
+<div class="total-box">
+<h2>TOTAL PORTFOLIO VALUE</h2>
+<h1>$65,000.00</h1>
+<button onclick="alert('هنا هتربط Firebase عشان الحفظ')">+ Add Funds</button>
+</div>
+<div class="grid">
+<div class="card"><h3>Global Equities</h3><h2>$15,000.00</h2><p>23.1% <span style="color:#F87171">Target: 40%</span></p></div>
+<div class="card"><h3>Safe Havens (Gold)</h3><h2>$20,000.00</h2><p>30.8% <span style="color:#4ADE80">Target: 25%</span></p></div>
+<div class="card"><h3>Digital Assets</h3><h2>$15,000.00</h2><p>23.1% <span style="color:#4ADE80">Target: 20%</span></p></div>
+<div class="card"><h3>Liquid Cash</h3><h2>$15,000.00</h2><p>23.1% <span style="color:#4ADE80">Target: 15%</span></p></div>
+</div>
+</div>
+</body>
+</html>
